@@ -1,4 +1,4 @@
-[![GitHub release](https://img.shields.io/badge/Download-Package)](https://github.com/DarrenRegan/Final-Year-Project/releases/latest/download/EcommereceApp.apk)
+[![GitHub release](https://img.shields.io/badge/Download-Package)]()
 
 # Gesture-Based-UI-Project
 
