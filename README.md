@@ -59,10 +59,7 @@ Give an example
 
 ## Built With
 
-* [Android Studio](https://developer.android.com/studio)
-* [Kotlin](https://kotlinlang.org/)
-* [Firebase](https://square.github.io/picasso/)
-* [Picasso](https://firebase.google.com/)
+* [Unity](https://unity.com/)
 
 ## Author
 
@@ -75,7 +72,6 @@ This project is licensed under the GNU General Public License - see the [LICENSE
 
 ## Research Links
 
-* [Firebase Docs](https://firebase.google.com/docs)
-* [Kotlin Docs](https://kotlinlang.org/docs/reference/)
+* [Unity](https://unity.com/)
 * [Badges/Shields for README](https://github.com/badges/shields)
 
