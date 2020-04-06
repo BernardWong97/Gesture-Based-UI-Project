@@ -297,6 +297,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Items
       objectReference: {fileID: 0}
+    - target: {fileID: 2562091637764419568, guid: 933a38d86d36dc34384ea093ade5fb33,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3944173436411630876, guid: 933a38d86d36dc34384ea093ade5fb33,
         type: 3}
       propertyPath: m_LocalPosition.x
