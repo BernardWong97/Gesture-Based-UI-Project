@@ -67,6 +67,7 @@ Give an example
 ## Author
 
 * [Darren Regan](https://github.com/DarrenRegan)
+* [Bernard Wong] (https://github.com/BernardWong97)
 
 ## License
 
