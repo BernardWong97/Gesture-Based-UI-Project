@@ -20,7 +20,6 @@ public class FoodSpawner : MonoBehaviour
         if (time >= spawnTime)
         {
             foodNow = foods[Random.Range(0, foods.Length - 1)];
-            Debug.Log("Time to spawn: " + foodNow.name);
             Spawn();
             SetRandomTime();
             time = 0;
@@ -36,7 +35,6 @@ public class FoodSpawner : MonoBehaviour
     private void SetRandomTime()
     {
         spawnTime = Random.Range(minTime, maxTime);
-        Debug.Log("Next food spawn in " + spawnTime + " seconds.");
     }
 
     

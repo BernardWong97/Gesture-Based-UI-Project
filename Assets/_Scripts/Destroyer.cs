@@ -6,7 +6,6 @@ public class Destroyer : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("Triggered");
         Destroy(col.gameObject);
     }
 }
