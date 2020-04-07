@@ -1,14 +1,12 @@
 [![GitHub release](https://img.shields.io/badge/Download-Package)]()
 
-# Gesture-Based-UI-Project
+# Tap Accuarcy Gesture Based Game built in Unity - Gesture-Based-UI-Project
 
-Gesture Based Game built in Unity
-
-The goal of your project is to develop an application with gesture-based systems. There are many different options for technologies available to create a gesture-based application. After browsing our options, we decided to create a version of the popular game Fruit Ninja/Tap Accuarcy with the LEAP motion controller and or Mobile device.
+The goal of our project is to develop an application with gesture-based system.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
