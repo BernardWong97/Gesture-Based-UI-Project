@@ -1,21 +1,21 @@
-[![GitHub release](https://img.shields.io/badge/Download-Package)]()
+[![GitHub release](https://img.shields.io/badge/Download-UnityPackage-green)](https://github.com/BernardWong97/Gesture-Based-UI-Project/releases/latest/download/Fruit.Tapper.unitypackage)
+[![GitHub release](https://img.shields.io/badge/Download-Documentation-green)](https://github.com/BernardWong97/Gesture-Based-UI-Project/raw/master/Gesture%20Based%20UI%20Development%20Project%20Documentation.docx)
 
-# Gesture-Based-UI-Project
+# Tap Accuarcy Gesture Based Game built in Unity
 
-Tap Gesture Based Game built in Unity
+The goal of our project is to develop an application with gesture-based system.
 
-Goal of this project is
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
 This application was made in latest version of Unity & Windows 10
 
 * Git
-* Unity
-* Mobile Phone
+* Unity 2019.3.7f1
+* Unity Packages for Android & Windows
 
 ### Installing
 
@@ -25,37 +25,8 @@ This application was made in latest version of Unity & Windows 10
 git clone https://github.com/BernardWong97/Gesture-Based-UI-Project.git
 ```
 
-2. Open Project in Unity
+2. Open Project with Unity Hub
 
-```
-
-```
-
-
-## test
-
-
-### test
-
-test
-
-```
-Give an example
-```
-
-### test
-
-test
-
-```
-Give an example
-```
-
-## Deployment
-
-## Conclusion - Darren
-
-## Conclusion - Bernard
 
 ## Built With
 
@@ -70,8 +41,14 @@ Give an example
 
 This project is licensed under the GNU General Public License - see the [LICENSE.md](LICENSE.md) file for details
 
+## Video Links
+
+* [Project Video](https://unity.com/)
+* [Repo Tour](https://youtu.be/WFgaI5afWfA)
+
 ## Research Links
 
 * [Unity](https://unity.com/)
 * [Badges/Shields for README](https://github.com/badges/shields)
+* See Documentation for further research links
 
