@@ -44,7 +44,7 @@ This project is licensed under the GNU General Public License - see the [LICENSE
 ## Video Links
 
 * [Project Video](https://unity.com/)
-* [Repo Tour](https://unity.com/)
+* [Repo Tour](https://youtu.be/WFgaI5afWfA)
 
 ## Research Links
 
