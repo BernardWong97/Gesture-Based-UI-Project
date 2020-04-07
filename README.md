@@ -14,8 +14,8 @@ These instructions will get you a copy of the project up and running on your loc
 This application was made in latest version of Unity & Windows 10
 
 * Git
-* Unity
-* Mobile Phone
+* Unity 2019.3.7f1
+* Unity Packages for Android & Windows
 
 ### Installing
 
@@ -25,37 +25,8 @@ This application was made in latest version of Unity & Windows 10
 git clone https://github.com/BernardWong97/Gesture-Based-UI-Project.git
 ```
 
-2. Open Project in Unity
+2. Open Project with Unity Hub
 
-```
-
-```
-
-
-## test
-
-
-### test
-
-test
-
-```
-Give an example
-```
-
-### test
-
-test
-
-```
-Give an example
-```
-
-## Deployment
-
-## Conclusion - Darren
-
-## Conclusion - Bernard
 
 ## Built With
 
@@ -74,4 +45,5 @@ This project is licensed under the GNU General Public License - see the [LICENSE
 
 * [Unity](https://unity.com/)
 * [Badges/Shields for README](https://github.com/badges/shields)
+* See Documentation for further search links
 
