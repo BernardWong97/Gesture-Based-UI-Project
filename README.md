@@ -49,5 +49,5 @@ This project is licensed under the GNU General Public License - see the [LICENSE
 
 * [Unity](https://unity.com/)
 * [Badges/Shields for README](https://github.com/badges/shields)
-* See Documentation for further search links
+* See Documentation for further research links
 
