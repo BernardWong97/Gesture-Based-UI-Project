@@ -1,4 +1,4 @@
-[![GitHub release](https://img.shields.io/badge/Download-UnityPackage)](https://github.com/BernardWong97/Gesture-Based-UI-Project/releases/download/Fruit.Tapper.unitypackage)
+[![GitHub release](https://img.shields.io/badge/Download-UnityPackage)](https://github.com/BernardWong97/Gesture-Based-UI-Project/releases/latest/download/Fruit.Tapper.unitypackage)
 
 # Tap Accuarcy Gesture Based Game built in Unity
 
