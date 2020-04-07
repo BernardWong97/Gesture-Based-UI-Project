@@ -1,6 +1,6 @@
 [![GitHub release](https://img.shields.io/badge/Download-Package)]()
 
-# Tap Accuarcy Gesture Based Game built in Unity - Gesture-Based-UI-Project
+# Tap Accuarcy Gesture Based Game built in Unity
 
 The goal of our project is to develop an application with gesture-based system.
 
@@ -39,6 +39,11 @@ git clone https://github.com/BernardWong97/Gesture-Based-UI-Project.git
 ## License
 
 This project is licensed under the GNU General Public License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Video Links
+
+* [Project Video](https://unity.com/)
+* [Repo Tour](https://unity.com/)
 
 ## Research Links
 
