@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,7 @@ public class Menu : MonoBehaviour {
 
 	public void Pause()
 	{
+		Food.isMenu = true;
 		pauseUI.SetActive(true);
 		Time.timeScale = 0f;
 		IsPaused = true;
@@ -20,6 +22,7 @@ public class Menu : MonoBehaviour {
 
 	public void Resume()
 	{
+		Food.isMenu = false;
 		pauseUI.SetActive(false);
 		Time.timeScale = 1f;
 		IsPaused = false;
@@ -40,6 +43,7 @@ public class Menu : MonoBehaviour {
 	 */
 	public void PlayGame()
 	{
+		Food.isMenu = false;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 
