@@ -6,6 +6,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/**
+ *  Control the countdown timer of the game.
+ */
 public class Timer : MonoBehaviour
 {
     private TextMeshProUGUI tmp;
@@ -32,6 +35,8 @@ public class Timer : MonoBehaviour
             doOnce = true;
             tmp.text = "0";
             timer = 0.0f;
+
+            // game over
             SceneManager.LoadScene(2);
         }
     }

@@ -5,6 +5,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+
+/**
+ *  Food class controlling user interaction and properties of the foods.
+ */
 public class Food : MonoBehaviour
 {
     private Text scoreUI;
@@ -13,11 +17,14 @@ public class Food : MonoBehaviour
 
     private void Start()
     {
+        // if the game state is not in a menu but in game, get score UI
         if(!isMenu)
             scoreUI = GameObject.Find("Points").GetComponent<Text>();
 
+        // get the current time of the countdown timer from Timer class.
         double timer = Math.Round(Timer.timer, 0, MidpointRounding.AwayFromZero);
 
+        // For every 20 seconds, the velocity of the food dropping increases.
         if (timer <= 20)
         {
             GetComponent<Rigidbody2D>().gravityScale = 0.75f;
@@ -33,6 +40,9 @@ public class Food : MonoBehaviour
             
     }
 
+    /**
+	 * Add score and destroy current food when tapped.
+	 */
     private void OnMouseDown()
     {
         if (EventSystem.current.IsPointerOverGameObject() && isMenu)

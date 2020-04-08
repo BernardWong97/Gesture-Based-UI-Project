@@ -7,11 +7,14 @@ using UnityEngine.SceneManagement;
 /**
  * Menu controller
  */
-public class Menu : MonoBehaviour {
-
+public class Menu : MonoBehaviour 
+{
 	public static bool IsPaused = false;
 	public GameObject pauseUI;
 
+	/**
+	 * Pause the game.
+	 */
 	public void Pause()
 	{
 		Food.isMenu = true;
@@ -20,6 +23,9 @@ public class Menu : MonoBehaviour {
 		IsPaused = true;
 	}
 
+	/**
+	 * Resume the game.
+	 */
 	public void Resume()
 	{
 		Food.isMenu = false;
@@ -28,11 +34,9 @@ public class Menu : MonoBehaviour {
 		IsPaused = false;
 	}
 
-	public void Settings()
-	{
-		Debug.Log("Settings");
-	}
-
+	/**
+	 * Transition to main menu scene.
+	 */
 	public void LoadMenu()
 	{
 		Time.timeScale = 1f;
@@ -40,7 +44,7 @@ public class Menu : MonoBehaviour {
 	}
 
 	/**
-	 * Change scene to tutorial
+	 * Transition to game scene.
 	 */
 	public void PlayGame()
 	{

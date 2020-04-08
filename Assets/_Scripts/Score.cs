@@ -2,6 +2,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+ * Class controlling highscores, populating score tables and display top 8 high scores.
+ */
 public class Score : MonoBehaviour
 {
     private Transform entryContainer;
@@ -14,8 +17,10 @@ public class Score : MonoBehaviour
         entryContainer = transform.Find("Container");
         entryTemplate = entryContainer.Find("Entry");
 
+        // disable entry template for populating
         entryTemplate.gameObject.SetActive(false);
 
+        // check if highscore list was initialized, if not, initialize and save into player pref
         if (PlayerPrefs.HasKey("highscoreTable"))
         {
             string jsonString = PlayerPrefs.GetString("highscoreTable");
@@ -31,6 +36,7 @@ public class Score : MonoBehaviour
 
         AddEntry((int) Food.score);
 
+        // populate score entries
         entryTransformList = new List<Transform>();
         foreach(int score in scoreList)
         {
@@ -38,6 +44,9 @@ public class Score : MonoBehaviour
         }
     }
 
+    /**
+     *  Create score entry and display onto the table.
+     */
     private void CreateEntry(int score, Transform container, List<Transform> transformList)
     {
         float templateHeight = 90f;
@@ -70,6 +79,9 @@ public class Score : MonoBehaviour
         transformList.Add(entryTransform);
     }
 
+    /**
+     *  Add an entry into the highscore list and save into player pref.
+     */
     public void AddEntry(int score)
     {
         scoreList.Add(score);
