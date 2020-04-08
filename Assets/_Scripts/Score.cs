@@ -15,6 +15,8 @@ public class Score : MonoBehaviour
 
         entryTemplate.gameObject.SetActive(false);
 
+        AddEntry((int) Food.score);
+
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
@@ -63,7 +65,7 @@ public class Score : MonoBehaviour
         transformList.Add(entryTransform);
     }
 
-    public static void AddEntry(int score)
+    public void AddEntry(int score)
     {
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);

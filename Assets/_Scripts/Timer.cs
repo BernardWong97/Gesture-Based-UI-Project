@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class Timer : MonoBehaviour
             doOnce = true;
             tmp.text = "0";
             timer = 0.0f;
-            Score.AddEntry((int) Food.score);
+            SceneManager.LoadScene(2);
         }
     }
 }
