@@ -30,7 +30,7 @@ public class Timer : MonoBehaviour
             doOnce = true;
             tmp.text = "0";
             timer = 0.0f;
-            Debug.Log("Times Up"); // Game Over
+            Score.AddEntry((int) Food.score);
         }
     }
 }

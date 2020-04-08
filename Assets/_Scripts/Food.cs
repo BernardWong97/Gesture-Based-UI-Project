@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Food : MonoBehaviour
 {
     private Text scoreUI;
-    private float score;
+    public static float score;
     public static bool isMenu = true;
 
     private void Start()
