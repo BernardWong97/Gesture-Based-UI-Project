@@ -20,7 +20,7 @@ public class Food : MonoBehaviour
 
         if (timer <= 20)
         {
-            GetComponent<Rigidbody2D>().gravityScale = 1.2f;
+            GetComponent<Rigidbody2D>().gravityScale = 0.75f;
         } 
         else if (timer <= 40)
         {
@@ -28,7 +28,7 @@ public class Food : MonoBehaviour
         }
         else
         {
-            GetComponent<Rigidbody2D>().gravityScale = 0.1f;
+            GetComponent<Rigidbody2D>().gravityScale = 0.25f;
         }
             
     }
