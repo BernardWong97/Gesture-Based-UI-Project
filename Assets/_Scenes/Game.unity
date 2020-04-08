@@ -225,6 +225,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2076094468}
+        m_MethodName: LoadVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &173229704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3879,6 +3890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 5e173557acff5bf449c82147e37663d3, type: 2}
+  musicSlider: {fileID: 938199192}
+  gameSlider: {fileID: 1678515448}
 --- !u!1 &2120002782
 GameObject:
   m_ObjectHideFlags: 0
