@@ -1,5 +1,6 @@
 [![GitHub release](https://img.shields.io/badge/Download-UnityPackage-green)](https://github.com/BernardWong97/Gesture-Based-UI-Project/releases/latest/download/Fruit.Tapper.unitypackage)
 [![GitHub release](https://img.shields.io/badge/Download-Documentation-green)](https://github.com/BernardWong97/Gesture-Based-UI-Project/raw/master/Gesture%20Based%20UI%20Development%20Project%20Documentation.docx)
+[![GitHub release](https://img.shields.io/badge/Download-Apk-green)](https://github.com/BernardWong97/Gesture-Based-UI-Project/releases/download/1/Fruit.Tapper.apk)
 
 # Tap Accuarcy Gesture Based Game built in Unity
 
@@ -31,6 +32,13 @@ git clone https://github.com/BernardWong97/Gesture-Based-UI-Project.git
 ## Built With
 
 * [Unity](https://unity.com/)
+
+## Game Installation
+
+- Click [here](https://github.com/BernardWong97/Gesture-Based-UI-Project/releases/download/1/Fruit.Tapper.apk) to download apk from your mobile devices or navigate to the repository [release page](https://github.com/BernardWong97/Gesture-Based-UI-Project/releases) and download the latest version of the APK file into your mobile devices.
+- Allow install unknown apps from your android device (A setting page should pop up when you click the apk file).
+- Install the game.
+- Enjoy.
 
 ## Author
 
