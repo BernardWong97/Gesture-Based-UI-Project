@@ -35,7 +35,7 @@ public class Score : MonoBehaviour
 
     private void CreateEntry(int score, Transform container, List<Transform> transformList)
     {
-        float templateHeight = 60f;
+        float templateHeight = 90f;
         Transform entryTransform = Instantiate(entryTemplate, container);
         RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
         entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
