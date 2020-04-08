@@ -7,6 +7,7 @@ public class Score : MonoBehaviour
     private Transform entryContainer;
     private Transform entryTemplate;
     private List<Transform> entryTransformList;
+    private static List<int> scoreList;
 
     private void Awake()
     {
@@ -15,19 +16,23 @@ public class Score : MonoBehaviour
 
         entryTemplate.gameObject.SetActive(false);
 
+        if (PlayerPrefs.HasKey("highscoreTable"))
+        {
+            string jsonString = PlayerPrefs.GetString("highscoreTable");
+            scoreList = JsonUtility.FromJson<List<int>>(jsonString);
+        }
+        else
+        {
+            scoreList = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0 };
+            string jsonString = JsonUtility.ToJson(scoreList);
+            PlayerPrefs.SetString("highscoreTable", jsonString);
+            PlayerPrefs.Save();
+        }
+
         AddEntry((int) Food.score);
 
-        string jsonString = PlayerPrefs.GetString("highscoreTable");
-        Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
-
-        highscores.highscoreList.Sort((a, b) => (a.CompareTo(b)));
-        highscores.highscoreList.Reverse();
-
-        if (highscores.highscoreList.Count > 8)
-            highscores.highscoreList.RemoveRange(8, highscores.highscoreList.Count - 8);
-
         entryTransformList = new List<Transform>();
-        foreach(int score in highscores.highscoreList)
+        foreach(int score in scoreList)
         {
             CreateEntry(score, entryContainer, entryTransformList);
         }
@@ -67,18 +72,15 @@ public class Score : MonoBehaviour
 
     public void AddEntry(int score)
     {
-        string jsonString = PlayerPrefs.GetString("highscoreTable");
-        Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
+        scoreList.Add(score);
+        scoreList.Sort((a, b) => (a.CompareTo(b)));
+        scoreList.Reverse();
 
-        highscores.highscoreList.Add(score);
+        if(scoreList.Count > 8)
+            scoreList.RemoveRange(8, scoreList.Count - 8);
 
-        string json = JsonUtility.ToJson(highscores);
+        string json = JsonUtility.ToJson(scoreList);
         PlayerPrefs.SetString("highscoreTable", json);
         PlayerPrefs.Save();
-    }
-
-    private class Highscores
-    {
-        public List<int> highscoreList;
     }
 }
