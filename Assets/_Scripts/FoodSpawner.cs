@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class FoodSpawner : MonoBehaviour
 {
-    private float maxTime = 2;
-    private float minTime = 0.2f;
+    private float maxTime = 5;
+    private float minTime = 1;
     private float time;
     private float spawnTime;
-    private float foodIndex;
+    public static bool isIncrease = false;
+    private bool pauseSpawn = false;
     public GameObject[] foods;
 
     private GameObject foodNow;
@@ -17,13 +18,14 @@ public class FoodSpawner : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        if (time >= spawnTime)
+        if (time >= spawnTime && !pauseSpawn)
         {
             foodNow = foods[Random.Range(0, foods.Length - 1)];
             Spawn();
             SetRandomTime();
             time = 0;
         }
+
     }
     
     private void Start()
@@ -36,8 +38,6 @@ public class FoodSpawner : MonoBehaviour
     {
         spawnTime = Random.Range(minTime, maxTime);
     }
-
-    
 
     private void Spawn()
     {

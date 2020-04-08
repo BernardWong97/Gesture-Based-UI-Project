@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     private TextMeshProUGUI tmp;
-    private float timer = 10;
+    public static float timer = 60;
     private bool canCount = true;
     private bool doOnce = false;
 

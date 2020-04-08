@@ -15,6 +15,22 @@ public class Food : MonoBehaviour
     {
         if(!isMenu)
             scoreUI = GameObject.Find("Points").GetComponent<Text>();
+
+        double timer = Math.Round(Timer.timer, 0, MidpointRounding.AwayFromZero);
+
+        if (timer <= 20)
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 1.2f;
+        } 
+        else if (timer <= 40)
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 0.5f;
+        }
+        else
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 0.1f;
+        }
+            
     }
 
     private void OnMouseDown()
