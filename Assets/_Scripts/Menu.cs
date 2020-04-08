@@ -35,7 +35,8 @@ public class Menu : MonoBehaviour {
 
 	public void LoadMenu()
 	{
-		Debug.Log("Menu");
+		Time.timeScale = 1f;
+		SceneManager.LoadScene(0);
 	}
 
 	/**
