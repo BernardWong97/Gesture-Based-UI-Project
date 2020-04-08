@@ -25,6 +25,7 @@ public class Food : MonoBehaviour
         score = Convert.ToInt32(scoreUI.text);
         score += 10;
         scoreUI.text = score.ToString();
-        Destroy(this.gameObject);
+        gameObject.GetComponent<AudioSource>().Play();
+        Destroy(gameObject, 0.3f);
     }
 }
