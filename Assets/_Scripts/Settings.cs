@@ -8,6 +8,12 @@ public class Settings : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public Slider musicSlider, gameSlider;
+
+    public void Start()
+    {
+        SetMusic(PlayerPrefs.GetFloat("music"));
+        SetVolume(PlayerPrefs.GetFloat("game"));
+    }
     public void SetMusic(float volume)
     {
         audioMixer.SetFloat("musicVolume", volume);

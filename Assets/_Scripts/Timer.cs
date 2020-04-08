@@ -15,6 +15,7 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
+        timer = 60;
         tmp = gameObject.GetComponent<TextMeshProUGUI>();
     }
 
